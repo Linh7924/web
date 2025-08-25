@@ -10,7 +10,7 @@
     background: white;
 }
 #footer{
-    background: blue;
+    background: #135647;
     height: 150px;
 }
  
@@ -18,14 +18,14 @@
     float:left;
     width: 300px;
     height: 400px;
-    background: blue;
+    background: #3cb371;
 }
  
 #right_sidebar{
     float:right;
     width: 300px;
     height: 400px;
-    background: orange;
+    background: #13e6a3;
 }
  
 #content{
