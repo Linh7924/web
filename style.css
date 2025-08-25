@@ -37,25 +37,25 @@
 }
 #list_post{
     border: solid 1px #ddd;
-    width: 60px;
+    width: 300px;
     margin: 0px auto;
 }
 .post{
     border: solid 1px #ddd;
-    margin: 5px 10px;
+    margin: 95px 100px;
     overflow: hidden;
 }
 .post .thumb{
     float:left;
-    width: 60px;
-    height: 60px;
+    width: 95px;
+    height: 95px;
 }
 .post .thumb img{
     max-width: 100%;
     display: inherit;
 }
 .post .infor{
-    margin-left: 80px;
+    margin-left: 130px;
 }
 .post .infor h3{
     margin: 15px 0px 20px 0px;
