@@ -1,16 +1,16 @@
 #header{
-    background: yellow;
+    background: white;
     height: 100px;
 }
 #menu{
-    background: grey;
-    height: 30px;
+    background: pink;
+    height: 40px;
 }
 #main_content{
-    background: pink;
+    background: white;
 }
 #footer{
-    background: red;
+    background: blue;
     height: 150px;
 }
  
