@@ -1,0 +1,15 @@
+#header{
+    background: yellow;
+    height: 100px;
+}
+#menu{
+    background: grey;
+    height: 30px;
+}
+#main_content{
+    background: pink;
+}
+#footer{
+    background: red;
+    height: 150px;
+}
