@@ -5,7 +5,9 @@
 #menu{
     background: pink;
     height: 30px;
-    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden
 }
 #main_content{
     background: pink;
@@ -65,4 +67,18 @@
     text-decoration: none;
     color: blue;
     text-transform: uppercase;
+}
+.menu a{
+    display: inline-block;
+    padding: 5px 10px;
+    color:#fff;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #288cc4;
+    background: #fff;
+}
+.menu li{
+    float:left;
+    list-style: none
 }
