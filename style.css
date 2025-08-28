@@ -36,41 +36,30 @@
   background: Violet;
 }
 
-#content {
-  margin-left: 300px;
-  margin-right: 300px;
-  height: 300px;
-  background: #fff; /* thêm ; để kết thúc thuộc tính */
+#content{
+    margin-left: 300px;
+    margin-right: 300px;
+    /* height: 300px;  <-- bỏ dòng này */
+    background: #fff; /* nhớ có ; */
+    min-height: 300px;   /* giữ độ cao tối thiểu nếu muốn */
+    height: auto;        /* cho phép nở theo nội dung */
 }
 
-/* DANH SÁCH BÀI VIẾT */
-#list_post {
-  border: 1px solid #ddd;
-  width: 300px;
-  margin: 0 auto;
+/* Giữ các chỉnh sửa trước đó để post hiển thị gọn trong khung 300px */
+#list_post{
+    border: 1px solid #ddd;
+    width: 300px;
+    margin: 0 auto;
 }
+.post{
+    border: 1px solid #ddd;
+    margin: 10px;
+    overflow: hidden;
+}
+.post .thumb{ float:left; width:95px; height:95px; }
+.post .thumb img{ max-width:100%; display:block; }
+.post .infor{ margin-left:130px; }
 
-.post {
-  border: 1px solid #ddd;
-  /* Sửa margin quá lớn gây vỡ layout */
-  margin: 10px;
-  overflow: hidden; /* giữ để tự clearfix cho .thumb float */
-}
-
-.post .thumb {
-  float: left;
-  width: 95px;
-  height: 95px;
-}
-
-.post .thumb img {
-  max-width: 100%;
-  display: block; /* sửa từ inherit -> block để ảnh không hở khoảng dưới */
-}
-
-.post .infor {
-  margin-left: 130px; /* 95 + khoảng cách nội dung */
-}
 
 .post .infor h3 {
   margin: 15px 0 10px 0; /* giảm khoảng cách cho gọn */
