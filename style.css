@@ -79,6 +79,6 @@
     background: #fff;
 }
 .menu li{
-    float:left;
+    float:center;
     list-style: none
 }
