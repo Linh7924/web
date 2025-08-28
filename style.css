@@ -1,84 +1,100 @@
-#header{
-    background: white;
-    height: 100px;
+/* KHU VỰC KHUNG CHÍNH */
+#header {
+  background: white;
+  height: 100px;
 }
-#menu{
-    background: pink;
-    height: 30px;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden
+
+#menu {
+  background: pink;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* thêm ; để kết thúc thuộc tính */
 }
-#main_content{
-    background: pink;
+
+#main_content {
+  background: pink;
 }
-#footer{
-    background: MediumSeaGreen;
-    height: 150px;
+
+#footer {
+  background: MediumSeaGreen;
+  height: 150px;
 }
- 
-#left_sidebar{
-    float:left;
-    width: 300px;
-    height: 400px;
-    background: DodgerBlue;
+
+/* BỐ CỤC 3 CỘT */
+#left_sidebar {
+  float: left;
+  width: 300px;
+  height: 400px;
+  background: DodgerBlue;
 }
- 
-#right_sidebar{
-    float:right;
-    width: 300px;
-    height: 400px;
-    background: Violet;
+
+#right_sidebar {
+  float: right;
+  width: 300px;
+  height: 400px;
+  background: Violet;
 }
- 
-#content{
-    margin-left: 300px;
-    margin-right: 300px;
-    height: 300px;
-    background: #fff
+
+#content {
+  margin-left: 300px;
+  margin-right: 300px;
+  height: 300px;
+  background: #fff; /* thêm ; để kết thúc thuộc tính */
 }
-#list_post{
-    border: solid 1px #ddd;
-    width: 300px;
-    margin: 0px auto;
+
+/* DANH SÁCH BÀI VIẾT */
+#list_post {
+  border: 1px solid #ddd;
+  width: 300px;
+  margin: 0 auto;
 }
-.post{
-    border: solid 1px #ddd;
-    margin: 95px 100px;
-    overflow: hidden;
+
+.post {
+  border: 1px solid #ddd;
+  /* Sửa margin quá lớn gây vỡ layout */
+  margin: 10px;
+  overflow: hidden; /* giữ để tự clearfix cho .thumb float */
 }
-.post .thumb{
-    float:left;
-    width: 95px;
-    height: 95px;
+
+.post .thumb {
+  float: left;
+  width: 95px;
+  height: 95px;
 }
-.post .thumb img{
-    max-width: 100%;
-    display: inherit;
+
+.post .thumb img {
+  max-width: 100%;
+  display: block; /* sửa từ inherit -> block để ảnh không hở khoảng dưới */
 }
-.post .infor{
-    margin-left: 130px;
+
+.post .infor {
+  margin-left: 130px; /* 95 + khoảng cách nội dung */
 }
-.post .infor h3{
-    margin: 15px 0px 20px 0px;
+
+.post .infor h3 {
+  margin: 15px 0 10px 0; /* giảm khoảng cách cho gọn */
 }
-.post .infor h3 a{
-    font-size: 18px;
-    text-decoration: none;
-    color: blue;
-    text-transform: uppercase;
+
+.post .infor h3 a {
+  font-size: 18px;
+  text-decoration: none;
+  color: blue;
+  text-transform: uppercase;
 }
-.menu a{
-    display: inline-block;
-    padding: 5px 10px;
-    color:#fff;
-    text-decoration: none;
+
+/* MENU */
+.menu a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
 }
-.menu a:hover{
-    color: #288cc4;
-    background: #fff;
+
+.menu a:hover {
+  color: #288cc4;
+  background: #fff;
 }
-.menu li{
-    float:center;
-    list-style: none
-}
+
+/* Xóa quy tắc sai: float:center (không hợp lệ) */
+/* .menu li { float:center; list-style: none } */
